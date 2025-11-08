@@ -1,4 +1,4 @@
-name: 'Patch Env Files'
+name: 'Skyhook Patch Env Files'
 description: 'Patch environment files with configuration values from JSON'
 author: 'Skyhook'
 
