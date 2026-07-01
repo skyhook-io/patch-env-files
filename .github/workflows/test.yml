@@ -10,7 +10,7 @@ jobs:
   test-single-file:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       
       - name: Test single file patching
         uses: ./
@@ -39,7 +39,7 @@ jobs:
   test-multiple-files:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       
       - name: Test multiple files patching
         uses: ./
@@ -78,7 +78,7 @@ jobs:
   test-base64-input:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       
       - name: Create base64 encoded patches
         id: encode
@@ -104,7 +104,7 @@ jobs:
   test-update-existing:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       
       - name: Create existing env file
         run: |
@@ -150,7 +150,7 @@ jobs:
   test-output:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       
       - name: Patch files and capture output
         id: patch
@@ -178,7 +178,7 @@ jobs:
   test-key-only-lines:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Create env file with key-only lines
         run: |
